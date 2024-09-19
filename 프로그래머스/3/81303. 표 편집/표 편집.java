@@ -1,3 +1,9 @@
+/*
+ * 이해하기도 어렵던 문제!
+ *
+ * 다시 생각하기, 다시 풀어보기, 다른사람 풀이 보기
+ */
+
 import java.util.Arrays;
 import java.util.Stack;
 
