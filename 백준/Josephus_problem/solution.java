@@ -10,7 +10,7 @@ class Solution{
         }
 
         while(deque.size()>1){
-            for(int i=0;i<K -1;i++){
+            for(int i=1;i<K;i++){
                 deque.addLast(deque.pollFirst());
             }
             deque.pollFirst();
