@@ -12,8 +12,8 @@ import java.util.Arrays;
 
 /*
  * Questions to myself
- * 1. Queue를 이용하고싶은데 스트링배열을 어떻게 변환하지?
- * 2. Queue에서 빼내는 방법이 아니고 첫번째 나올 값만 확인하는 메소드가 있나?
+ * 1. ArrayDeque를 이용하고싶은데 스트링배열을 어떻게 변환하지? Arrays.asList(배열)
+ * 2. ArrayDeque에서 빼내는 방법이 아니고 첫번째 나올 값만 확인하는 메소드가 있나? .peekFirst()
  */
 
 class Solution {
@@ -26,6 +26,7 @@ class Solution {
         while(goalDeque.size() > 0) {
             String checkGoal = goalDeque.pollFirst();
             
+            // Q2 answer
             if(checkGoal.equals(cardsDeque1.peekFirst())) {
                 cardsDeque1.pollFirst();
             }else if(checkGoal.equals(cardsDeque2.peekFirst())) {
